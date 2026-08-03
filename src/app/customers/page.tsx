@@ -98,9 +98,9 @@ const [detailsOpen, setDetailsOpen] =
   // Companies for dropdown
   //---------------------------------------
 
-  const companies = useMemo(() => {
-    return [...new Set(customers.map((c) => c.company))];
-  }, []);
+const companies = useMemo(() => {
+  return [...new Set(customers.map((c) => c.company))];
+}, [customers]);
 
   //---------------------------------------
   // Filter
